@@ -11,5 +11,11 @@ namespace ShopLibrary
         public string name { get; set; }
         public List<Vendor> vendors { get; set; }
         public List<Item> items { get; set; }
+
+        public Store() 
+        {
+            vendors = new List<Vendor>();
+            items = new List<Item>();
+        }
     }
 }
