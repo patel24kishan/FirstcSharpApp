@@ -1,0 +1,7 @@
+W:\Project\FirstcSharpApp\obj\Release\net6.0-windows\FirstcSharpApp.csproj.AssemblyReference.cache
+W:\Project\FirstcSharpApp\obj\Release\net6.0-windows\FirstcSharpApp.Shop.resources
+W:\Project\FirstcSharpApp\obj\Release\net6.0-windows\FirstcSharpApp.csproj.GenerateResource.cache
+W:\Project\FirstcSharpApp\obj\Release\net6.0-windows\FirstcSharpApp.GeneratedMSBuildEditorConfig.editorconfig
+W:\Project\FirstcSharpApp\obj\Release\net6.0-windows\FirstcSharpApp.AssemblyInfoInputs.cache
+W:\Project\FirstcSharpApp\obj\Release\net6.0-windows\FirstcSharpApp.AssemblyInfo.cs
+W:\Project\FirstcSharpApp\obj\Release\net6.0-windows\FirstcSharpApp.csproj.CoreCompileInputs.cache

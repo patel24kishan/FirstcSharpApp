@@ -1,0 +1,17 @@
+W:\Project\FirstcSharpApp\obj\Debug\net6.0-windows\FirstcSharpApp.csproj.AssemblyReference.cache
+W:\Project\FirstcSharpApp\obj\Debug\net6.0-windows\FirstcSharpApp.Shop.resources
+W:\Project\FirstcSharpApp\obj\Debug\net6.0-windows\FirstcSharpApp.csproj.GenerateResource.cache
+W:\Project\FirstcSharpApp\obj\Debug\net6.0-windows\FirstcSharpApp.GeneratedMSBuildEditorConfig.editorconfig
+W:\Project\FirstcSharpApp\obj\Debug\net6.0-windows\FirstcSharpApp.AssemblyInfoInputs.cache
+W:\Project\FirstcSharpApp\obj\Debug\net6.0-windows\FirstcSharpApp.AssemblyInfo.cs
+W:\Project\FirstcSharpApp\obj\Debug\net6.0-windows\FirstcSharpApp.csproj.CoreCompileInputs.cache
+W:\Project\FirstcSharpApp\bin\Debug\net6.0-windows\FirstcSharpApp.exe
+W:\Project\FirstcSharpApp\bin\Debug\net6.0-windows\FirstcSharpApp.deps.json
+W:\Project\FirstcSharpApp\bin\Debug\net6.0-windows\FirstcSharpApp.runtimeconfig.json
+W:\Project\FirstcSharpApp\bin\Debug\net6.0-windows\FirstcSharpApp.dll
+W:\Project\FirstcSharpApp\bin\Debug\net6.0-windows\FirstcSharpApp.pdb
+W:\Project\FirstcSharpApp\obj\Debug\net6.0-windows\FirstcSharpApp.dll
+W:\Project\FirstcSharpApp\obj\Debug\net6.0-windows\refint\FirstcSharpApp.dll
+W:\Project\FirstcSharpApp\obj\Debug\net6.0-windows\FirstcSharpApp.pdb
+W:\Project\FirstcSharpApp\obj\Debug\net6.0-windows\FirstcSharpApp.genruntimeconfig.cache
+W:\Project\FirstcSharpApp\obj\Debug\net6.0-windows\ref\FirstcSharpApp.dll

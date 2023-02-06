@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FirstcSharpApp": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
