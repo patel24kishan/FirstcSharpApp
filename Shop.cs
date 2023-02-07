@@ -9,6 +9,8 @@ namespace FirstcSharpApp
         private List<Item> shoppingCartData = new List<Item>();
         BindingSource itemBinding=new BindingSource();
         BindingSource cartBinding = new BindingSource();
+        BindingSource vendorBinding = new BindingSource();
+
         public Shop()
         {
             InitializeComponent();
@@ -25,6 +27,13 @@ namespace FirstcSharpApp
 
             listBox2.DisplayMember = "DisplayItm";
             listBox2.ValueMember = "DisplayItm";
+
+            vendorBinding.DataSource = store.vendors;
+            listBox3.DataSource = vendorBinding;
+
+            listBox3.DisplayMember = "DisplayVendor";
+            listBox3.ValueMember = "DisplayVendor";
+
 
         }
 
@@ -72,10 +81,6 @@ namespace FirstcSharpApp
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void addToCart_Button(object sender, EventArgs e)
         {
@@ -93,12 +98,24 @@ namespace FirstcSharpApp
             foreach(Item item in shoppingCartData)
             {
                 item.sold = true;
+                item.owner.payment += item.owner.comission * item.price;
 
             }
             shoppingCartData.Clear();
             itemBinding.DataSource = store.items.Where(x => x.sold == false).ToList();
             cartBinding.ResetBindings(false);
             itemBinding.ResetBindings(false);
+            vendorBinding.ResetBindings(false);
+        }
+
+        private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

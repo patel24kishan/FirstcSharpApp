@@ -37,6 +37,8 @@
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.listBox3 = new System.Windows.Forms.ListBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.storeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -82,7 +84,7 @@
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(592, 227);
+            this.button2.Location = new System.Drawing.Point(697, 218);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(88, 26);
             this.button2.TabIndex = 3;
@@ -113,11 +115,36 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // listBox3
+            // 
+            this.listBox3.DataSource = this.storeBindingSource;
+            this.listBox3.DisplayMember = "DisplayItm";
+            this.listBox3.FormattingEnabled = true;
+            this.listBox3.ItemHeight = 15;
+            this.listBox3.Location = new System.Drawing.Point(12, 284);
+            this.listBox3.Name = "listBox3";
+            this.listBox3.Size = new System.Drawing.Size(300, 154);
+            this.listBox3.TabIndex = 7;
+            this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(12, 250);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 21);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Vendor";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // Shop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(804, 460);
+            this.Controls.Add(this.listBox3);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
@@ -144,5 +171,7 @@
         private Label label2;
         private BindingSource storeBindingSource;
         private ErrorProvider errorProvider1;
+        private ListBox listBox3;
+        private Label label3;
     }
 }
