@@ -5,7 +5,8 @@ namespace FirstcSharpApp
     public partial class Shop : Form
     {
 
-        private Store store=new Store();
+        private Store store = new Store();
+        private double storeProfit = 0.00;
         private List<Item> shoppingCartData = new List<Item>();
         BindingSource itemBinding=new BindingSource();
         BindingSource cartBinding = new BindingSource();
@@ -99,10 +100,12 @@ namespace FirstcSharpApp
             {
                 item.sold = true;
                 item.owner.payment += item.owner.comission * item.price;
-
+                storeProfit += (1 - item.owner.comission) * item.price;
             }
             shoppingCartData.Clear();
             itemBinding.DataSource = store.items.Where(x => x.sold == false).ToList();
+
+            label5.Text = string.Format("${0}", storeProfit);
             cartBinding.ResetBindings(false);
             itemBinding.ResetBindings(false);
             vendorBinding.ResetBindings(false);
@@ -114,6 +117,11 @@ namespace FirstcSharpApp
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }

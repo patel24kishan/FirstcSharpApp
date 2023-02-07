@@ -39,6 +39,8 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.listBox3 = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.storeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -138,11 +140,34 @@
             this.label3.Text = "Vendor";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(489, 254);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(108, 21);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Store\'s Profit:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(612, 259);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(39, 14);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "$0.00";
+            // 
             // Shop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 460);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.listBox3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.listBox2);
@@ -173,5 +198,7 @@
         private ErrorProvider errorProvider1;
         private ListBox listBox3;
         private Label label3;
+        private Label label4;
+        private Label label5;
     }
 }
