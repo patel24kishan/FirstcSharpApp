@@ -10,10 +10,20 @@ namespace ShopLibrary
     {
         public string title { get; set; }
         public string description { get; set; }
-        public string price { get; set; }
-        public string sold { get; set; }
+        public double price { get; set; }
+        public bool sold { get; set; }
         public string paymentDistributed { get; set; }
         public Vendor owner { get; set; }
+
+        public string DisplayItm 
+        {
+            get
+            {
+            return string.Format("{0}-${1}", title, price);
+
+            }
+                
+        }
 
     }
 }
