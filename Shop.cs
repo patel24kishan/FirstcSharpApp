@@ -6,7 +6,9 @@ namespace FirstcSharpApp
     {
 
         private Store store=new Store();
+        private List<Item> shoppingCartData = new List<Item>();
         BindingSource itemBinding=new BindingSource();
+        BindingSource cartBinding = new BindingSource();
         public Shop()
         {
             InitializeComponent();
@@ -17,6 +19,13 @@ namespace FirstcSharpApp
 
             listBox1.DisplayMember= "DisplayItm";
             listBox1.ValueMember= "DisplayItm";
+
+            cartBinding.DataSource = shoppingCartData;
+            listBox2.DataSource = cartBinding;
+
+            listBox2.DisplayMember = "DisplayItm";
+            listBox2.ValueMember = "DisplayItm";
+
         }
 
         private void SetupData()
@@ -65,6 +74,17 @@ namespace FirstcSharpApp
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void addToCart_Button(object sender, EventArgs e)
+        {
+
+            Item selectedItem = (Item)listBox1.SelectedItem;
+            shoppingCartData.Add(selectedItem);
+            cartBinding.ResetBindings(false);
+
+            MessageBox.Show("New item added to Cart !!!");
 
         }
     }
