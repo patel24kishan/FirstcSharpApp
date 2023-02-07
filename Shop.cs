@@ -14,7 +14,7 @@ namespace FirstcSharpApp
             InitializeComponent();
             SetupData();
 
-            itemBinding.DataSource= store.items;
+            itemBinding.DataSource= store.items.Where(x=>x.sold==false).ToList();
             listBox1.DataSource= itemBinding;
 
             listBox1.DisplayMember= "DisplayItm";
@@ -87,5 +87,19 @@ namespace FirstcSharpApp
             MessageBox.Show("New item added to Cart !!!");
 
         }
+
+        private void PurchaseBtn(object sender, EventArgs e)
+        {
+            foreach(Item item in shoppingCartData)
+            {
+                item.sold = true;
+
+            }
+            shoppingCartData.Clear();
+            itemBinding.DataSource = store.items.Where(x => x.sold == false).ToList();
+            cartBinding.ResetBindings(false);
+            itemBinding.ResetBindings(false);
+        }
     }
+
 }
